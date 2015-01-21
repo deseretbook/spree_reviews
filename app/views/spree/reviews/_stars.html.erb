@@ -3,7 +3,7 @@
     name  = "review[rating]"
   else
     state = 'disabled'
-    name  = defined?(review).nil? ? Time.now.tv_usec.to_s : "review_#{review}"
+    name  = defined?(review).nil? ? rand(100000) : "review_#{review}"
   end %>
 <% for i in 1..NB_STARS %>
   <input name="<%= name %>"
