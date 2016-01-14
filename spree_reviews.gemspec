@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_reviews'
-  s.version     = '1.0.1'
+  s.version     = '1.0.9999'
   s.summary     = 'Basic review and ratings facility for Spree'
   s.authors 	  = ['Paul Callaghan']
   s.description = s.summary
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.3.0'
+  s.add_dependency 'solidus_core', '~> 1.1.0'
 
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'capybara', '~> 2.2.1'
